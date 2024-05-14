@@ -83,6 +83,17 @@
           title: "Felicitaciones!",
           message: "El empleado ha sido eliminado correctamente",
         });
+
+        // Levantar alerto con el evento click
+        let btnError = document.querySelector("#errorClick");
+        btnError.addEventListener("click", () => {
+          iziToast.error({
+            timeout: 5000,
+            icon: "bi bi-check-circle-fill",
+            title: "Felicitaciones!",
+            message: "El empleado ha sido eliminado correctamente",
+          });
+        });
       });
 
       function showCustomToast() {
